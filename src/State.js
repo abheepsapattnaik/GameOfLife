@@ -1,4 +1,3 @@
-
 export default class State {
   constructor(_stateOfCell) {
     this._stateOfCell = _stateOfCell;
