@@ -1,12 +1,15 @@
 export {LIVE,DEAD} from './State';
-export default class {
-  constructor(x,y,state){
-    this.x = x;
-    this.y = y;
+
+export default class Cell {
+  constructor(position,state){
+    this.position = position;
     this.state = state;
   }
-
   isValid(){
-    return (this.x>0 && this.y >0);
+    return (this.position.row>0 && this.position.column >0);
   }
+nextGeneration(){
+
+}
+
 }
