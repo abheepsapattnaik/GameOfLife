@@ -7,10 +7,6 @@ export default class State {
     return this._stateOfCell === LIVE;
   }
 
-  isDead() {
-    return this._stateOfCell === DEAD;
-  }
-
   updateStateForLive( aliveNeighborCount) {
     if (aliveNeighborCount < 2 || aliveNeighborCount > 3) {
       return this._stateOfCell = DEAD;
